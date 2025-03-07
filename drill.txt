@@ -1,1 +1,54 @@
-hi
+Drill1:
+
+1.Create the following directory structure. (Create empty files where necessary)
+
+mkdir hello                -->mkdir is used to  create a new directory and hello is the name of the directory
+
+cd hello                    -- cd is used to change directory forward
+mkdir one                   --> mkdir is used to create a new directory and one is the name of the directory
+mkdir five                  -->mkdir is used to create a new directory and five is the name of the directory
+
+cd five                     --> cd is used to change directory forward
+mkdir six                   --> mkdir is used to create a new directory and six is the name of the directory
+cd six
+touch c.txt                  --> touch is used to create a new empty file and c.txt is the name of the file
+mkdir seven 
+cd seven
+touch error.log
+
+cd ..                      --> cd is used to change directory backward
+cd ..
+cd ..
+
+cd one                      --> cd is used to change directory forward
+touch a.txt                 --> touch is used to create a new empty file and a.txt is the name of the file
+touch b.txt                 --> touch is used to create a new empty file and b.txt is the name of the file
+cd two                      --> cd is used to change directory forward
+touch d.txt
+cd three
+touch e.txt 
+cd four
+touch access.log
+
+
+
+2. Delete all the files having the .log extension.?
+ans. find . -name \*.log -type f -delete        --> find is used to search for files based on various conditions and delete is used to delete the files.
+
+3. Add the following content to a.txt. ?
+ans. echo " Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others" >> a.txt 
+         --> echo is used to display the text and >> is used to append the text to the file.
+
+4.Delete the directory named five .?
+ans. rm -R five             --> rm is used to delete the files and -R is used to delete the directory and its contents.
+
+5. Rename the one directory to uno .?
+ans. mv one uno             --> mv is used to move the files and rename the directories and uno is the new name of the directory
+
+6.Move a.txt to the two directory.?
+ans.  mv a.txt two/a.txt    --> mv is used to move the files and two/a.txt is the new location of the file.
+
+
+
+Drill 2:
+
